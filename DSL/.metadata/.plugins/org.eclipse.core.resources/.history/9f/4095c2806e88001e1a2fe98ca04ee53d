@@ -1,0 +1,12 @@
+package persons.tasks.generator;
+
+class Auxiliary {
+	
+	def static List<Action> getActions(Planning root) {
+		var List<Action> actionlist = new ArrayList<Action>()
+				for (Task t : root.tasks){
+					actionlist.add(t.action)
+				}
+		return actionlist;
+	}
+}

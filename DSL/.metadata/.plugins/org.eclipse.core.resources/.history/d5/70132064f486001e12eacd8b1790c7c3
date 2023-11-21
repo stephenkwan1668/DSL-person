@@ -1,0 +1,9 @@
+grammar persons.tasks.TaskDSL with org.eclipse.xtext.common.Terminals
+
+generate taskDSL "http://www.tasks.persons/TaskDSL"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
